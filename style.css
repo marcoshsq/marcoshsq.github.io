@@ -11,22 +11,36 @@ body {
     padding: 20px;
 }
 
-.header {
-    text-align: center;
-}
-
-.projects {
+header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333; /* Cor de fundo para o cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno para o cabeçalho */
+    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
 }
 
-.project-card {
-    width: 200px;
-    margin: 20px;
+.logo h1 {
+    margin: 0;
 }
 
-.footer {
-    text-align: center;
-    margin-top: 50px;
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
 }
+
+.nav-links a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Adicione margem superior ao corpo para compensar o espaço ocupado pelo cabeçalho fixo */
+body {
+    margin-top: 70px;
+}
+
+/* Restante do estilo permanece inalterado */
