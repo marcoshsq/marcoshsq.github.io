@@ -1,16 +1,3 @@
-/* Reset de estilos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos básicos do corpo */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
 /* Estilos do cabeçalho */
 header {
     background-color: #333;
@@ -21,20 +8,27 @@ header {
 .container {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     font-size: 1.8em;
-    margin-right: 20px;
+}
+
+nav {
+    flex-grow: 1;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav a {
@@ -50,4 +44,38 @@ footer {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        text-align: center;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
 }
