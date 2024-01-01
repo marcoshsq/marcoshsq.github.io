@@ -1,36 +1,53 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos do corpo */
 body {
-    background-color: #1a1a1a; /* Cor de fundo escura */
-    color: #fff; /* Cor do texto principal */
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
+/* Estilos do cabeçalho */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #333; /* Cor de fundo escura para o cabeçalho */
-    padding: 10px 20px; /* Espaçamento interno para o cabeçalho */
-    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-.logo h1 {
-    margin: 0;
-    color: #fff; /* Cor do texto no cabeçalho */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.nav-links a {
-    color: #fff; /* Cor dos links no cabeçalho */
+h1 {
+    font-size: 1.8em;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
     text-decoration: none;
-    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.nav-links a:hover {
-    border-bottom: 2px solid #fff;
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
-
-/* Restante do estilo permanece inalterado */
