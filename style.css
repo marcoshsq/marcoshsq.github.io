@@ -1,14 +1,8 @@
 body {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto principal */
     font-family: Arial, sans-serif;
     margin: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 header {
@@ -19,28 +13,24 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #333; /* Cor de fundo para o cabeçalho */
+    background-color: #333; /* Cor de fundo escura para o cabeçalho */
     padding: 10px 20px; /* Espaçamento interno para o cabeçalho */
     z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
 }
 
 .logo h1 {
     margin: 0;
+    color: #fff; /* Cor do texto no cabeçalho */
 }
 
 .nav-links a {
-    color: #fff;
+    color: #fff; /* Cor dos links no cabeçalho */
     text-decoration: none;
     margin-left: 20px;
 }
 
 .nav-links a:hover {
     border-bottom: 2px solid #fff;
-}
-
-/* Adicione margem superior ao corpo para compensar o espaço ocupado pelo cabeçalho fixo */
-body {
-    margin-top: 70px;
 }
 
 /* Restante do estilo permanece inalterado */
